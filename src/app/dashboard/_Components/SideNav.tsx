@@ -15,35 +15,35 @@ const sideNavItems: SideNavItem[] = [
     id: 'dashboard',
     name: 'Home',
     path: '/dashboard',
-    icon: <Image src="/Icon-sideNav-dashboard/graphIcon.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/graphIcon.png" alt="" width={40} height={40} />,
    
   },
   {
     id: 'calendar',
     name: 'Calendar',
     path: '/dashboard/calendar',
-    icon: <Image src="/Icon-sideNav-dashboard/calendar.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/calendar.png" alt="" width={40} height={40} />,
    
   },
   {
     id: 'tasks',
     name: 'Tasks',
     path: '/dashboard/tasks',
-    icon: <Image src="/Icon-sideNav-dashboard/taskList.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/taskList.png" alt="" width={40} height={40} />,
     
   },
   {
     id: 'timer',
     name: 'Timer',
     path: '/dashboard/timer',
-    icon: <Image src="/Icon-sideNav-dashboard/timer.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/timer.png" alt="" width={40} height={40} />,
     
   },
   {
     id: 'settings',
     name: 'Settings',
     path: '/dashboard/settings',
-    icon: <Image src="/Icon-sideNav-dashboard/settingIcon.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/settingIcon.png" alt="" width={50} height={50} />,
     
   }
 ];
