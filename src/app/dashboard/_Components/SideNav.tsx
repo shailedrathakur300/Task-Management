@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -14,35 +15,35 @@ const sideNavItems: SideNavItem[] = [
     id: 'dashboard',
     name: 'Home',
     path: '/dashboard',
-    icon: <img src="/Icon-sideNav-dashboard/graphIcon.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/graphIcon.png" alt="" />,
    
   },
   {
     id: 'calendar',
     name: 'Calendar',
     path: '/dashboard/calendar',
-    icon: <img src="/Icon-sideNav-dashboard/calendar.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/calendar.png" alt="" />,
    
   },
   {
     id: 'tasks',
     name: 'Tasks',
     path: '/dashboard/tasks',
-    icon: <img src="/Icon-sideNav-dashboard/taskList.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/taskList.png" alt="" />,
     
   },
   {
     id: 'timer',
     name: 'Timer',
     path: '/dashboard/timer',
-    icon: <img src="/Icon-sideNav-dashboard/timer.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/timer.png" alt="" />,
     
   },
   {
     id: 'settings',
     name: 'Settings',
     path: '/dashboard/settings',
-    icon: <img src="/Icon-sideNav-dashboard/settingIcon.png" alt="" />,
+    icon: <Image src="/Icon-sideNav-dashboard/settingIcon.png" alt="" />,
     
   }
 ];
