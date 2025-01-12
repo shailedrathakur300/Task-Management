@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import CalendarIntegration from "./_Components/googleCalendarIntration";
 import TaskList from "./_Components/taskList";
 
 
@@ -17,7 +18,7 @@ const Page: React.FC = () => {
   const username = "Shailendra";
   const currentDate = new Date().toLocaleDateString();
   return (
-    <div className="mt-10 w-screen h-screen">
+    <div className="mt-10 w-screen h-screen fix">
       {/* Header Section */}
       <header className="flex items-center gap-4">
         <Image
@@ -41,11 +42,14 @@ const Page: React.FC = () => {
         <div className="grid grid-cols-8 grid-rows-8 h-screen gap-3">
           {/* Calendar Section */}
           <div
-            id="calendar-show-board"
-            className="col-span-8 row-span-5 border bg-yellow-50 border-orange-500 border-dashed rounded-lg"
-          >
-            <p className="text-center text-lg font-semibold">Calendar</p>
-          </div>
+              id="calendar-show-board"
+              className="col-span-8 row-span-5 bg-yellow-50 border border-orange-500 border-dashed rounded-lg p-0 overflow-hidden"
+            >
+              <div className="w-full h-full">
+                <CalendarIntegration />
+              </div>
+            </div>
+ 
 
           {/* Task List Section */}
           <div className="col-span-5 row-span-3 bg-pink-100 border border-purple-600 border-dashed rounded-lg">
